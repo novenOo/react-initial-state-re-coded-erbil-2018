@@ -7,6 +7,11 @@ class Address extends React.Component{
     
     this.state = {fullAddress:`${props.streer}, ${props.city}`}
   }
+  render(){
+    return(
+      <div className='address'>{this.state.fullAddress}</div>
+      )
+  }
 }
 
 export default Address;
